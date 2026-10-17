@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
-    "dev-bundle": "webpack -w -d",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev-server": "node init && nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-bundle": "node init && webpack -w -d",
+    "start": "node init && react-scripts start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
